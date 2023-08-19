@@ -3,7 +3,7 @@
   "name": "Skip Netflix Intros",
   "version": "1.0",
   "description": "Automatically clicks a button on a webpage",
-  "permissions": ["activeTab", "tabs"],
+  "permissions": ["https://*.netflix.com"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
