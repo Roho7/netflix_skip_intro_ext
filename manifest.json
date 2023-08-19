@@ -1,19 +1,18 @@
 {
-  "manifest_version": 2,
-  "name": "Click Automation Extension",
+  "manifest_version": 3,
+  "name": "Skip Netflix Intros",
   "version": "1.0",
-  "permissions": ["storage", "activeTab", "tabs"],
-  "browser_action": {
-    "default_popup": "popup.html"
-  },
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
+  "description": "Automatically clicks a button on a webpage",
+  "permissions": ["activeTab", "tabs"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["contentScript.js"]
+      "js": ["./scripts/content-script.js"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "./icons/icon1.png",
+    "48": "./icons/icon1.png",
+    "128": "./icons/icon1.png"
+  }
 }
